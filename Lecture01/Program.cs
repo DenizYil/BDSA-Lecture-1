@@ -19,12 +19,12 @@ namespace Lecture01
                     return;
                 }
             }
-            catch (Exception e) {
+            catch (Exception ignored) {
                 Console.WriteLine("You did not enter a number");
                 return;
             }
 
-            Console.WriteLine(new YearManager().IsLeapYear(year));
+            Console.WriteLine(new YearManager().IsLeapYear(year) ? "yay" : "nay");
         }
     }
 }
